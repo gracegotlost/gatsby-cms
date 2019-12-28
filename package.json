@@ -1,12 +1,9 @@
 {
-  "name": "CDS documentation site",
+  "name": "Constellation-design-system",
   "private": true,
   "description": "A test of a fully customizable doc site with Netlify CMS.",
   "version": "1.0.0",
   "author": "Tingshan Gou <tingshangou@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
