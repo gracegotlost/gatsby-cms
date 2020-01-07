@@ -83,17 +83,6 @@
           "actualName": "IndexPage"
         }
       ]
-    },
-    {
-      "key": "src/pages/blog.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Blog",
-          "methods": [],
-          "actualName": "Blog"
-        }
-      ]
     }
   ]
 }

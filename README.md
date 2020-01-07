@@ -1,15 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  CDS Documentation Site
-</h1>
-
-<img alt="screesnhot" src="./screenshot.png">
-
 This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
 
 ## 🚀 Quick start
@@ -54,6 +42,4 @@ Start from [this point](https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/gatsby-personal-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+[Deploy to Netlify](https://app.netlify.com/sites/vigilant-cray-dd61f8/overview)

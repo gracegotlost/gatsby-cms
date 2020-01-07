@@ -6,8 +6,8 @@
   "author": "Tingshan Gou <tingshangou@gmail.com>",
   "dependencies": {
     "@babel/core": "^7.7.7",
-    "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
     "babel-plugin-styled-components": "^1.10.0",
     "docz": "^2.2.0",
     "gatsby": "^2.3.25",
