@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `CDS Documentation Site`,
     author: `Tingshan Gou`,
     description: `A test of a fully customizable doc site with Netlify CMS.`,
@@ -10,13 +9,19 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-theme-docz`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-feed-mdx`,
+    {
+      resolve: 'gatsby-plugin-feed-mdx',
+      options: {
+        mdx: false
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: [".md"],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

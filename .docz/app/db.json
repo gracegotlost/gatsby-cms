@@ -1,0 +1,99 @@
+{
+  "config": {
+    "title": "Constellation Design System",
+    "description": "A test of a fully customizable doc site with Netlify CMS.",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": "https://github.com/gatsbyjs/gatsby-starter-blog",
+    "native": false,
+    "themeConfig": {},
+    "separator": "-",
+    "files": "src/**/*.{md,markdown,mdx}"
+  },
+  "entries": [
+    {
+      "key": "src/components/README.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/docs",
+        "id": "e51f5da2d5f2984c9f31e312538d9e3b",
+        "filepath": "src/components/README.mdx",
+        "fullpath": "/Users/tingshang/Desktop/gatsby-cms/src/components/README.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-blog/edit/master/src/components/README.mdx",
+        "slug": "src-components-readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "getting-started",
+            "depth": 1,
+            "value": "Getting Started"
+          },
+          {
+            "slug": "hello-world",
+            "depth": 2,
+            "value": "Hello world"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/button.mdx",
+      "value": {
+        "name": "Button",
+        "menu": "Components",
+        "id": "2b21881f0ce08cf5f657bf101df24908",
+        "filepath": "src/components/button.mdx",
+        "fullpath": "/Users/tingshang/Desktop/gatsby-cms/src/components/button.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-blog/edit/master/src/components/button.mdx",
+        "slug": "src-components-button",
+        "route": "/src-components-button",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "with-different-sizes",
+            "depth": 2,
+            "value": "With different sizes"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/pages/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "IndexPage",
+          "methods": [],
+          "actualName": "IndexPage"
+        }
+      ]
+    },
+    {
+      "key": "src/pages/blog.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Blog",
+          "methods": [],
+          "actualName": "Blog"
+        }
+      ]
+    }
+  ]
+}
