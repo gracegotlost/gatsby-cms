@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `CDS Documentation Site`,
+    title: `Constellation Design System`,
     author: `Tingshan Gou`,
     description: `A test of a fully customizable doc site with Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://vigilant-cray-dd61f8.netlify.com/`,
     social: {
       twitter: `gracegotlost`,
     },

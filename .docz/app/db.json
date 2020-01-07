@@ -8,7 +8,7 @@
     "native": false,
     "themeConfig": {},
     "separator": "-",
-    "files": "src/**/*.{md,markdown,mdx}"
+    "files": "src/components/**/*.{md,markdown,mdx}"
   },
   "entries": [
     {
@@ -37,16 +37,16 @@
       }
     },
     {
-      "key": "src/components/button.mdx",
+      "key": "src/components/button/button.mdx",
       "value": {
         "name": "Button",
         "menu": "Components",
-        "id": "2b21881f0ce08cf5f657bf101df24908",
-        "filepath": "src/components/button.mdx",
-        "fullpath": "/Users/tingshang/Desktop/gatsby-cms/src/components/button.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-blog/edit/master/src/components/button.mdx",
-        "slug": "src-components-button",
-        "route": "/src-components-button",
+        "id": "627a2d929cede9cf7c1c25d950434123",
+        "filepath": "src/components/button/button.mdx",
+        "fullpath": "/Users/tingshang/Desktop/gatsby-cms/src/components/button/button.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-blog/edit/master/src/components/button/button.mdx",
+        "slug": "src-components-button-button",
+        "route": "/src-components-button-button",
         "headings": [
           {
             "slug": "button",

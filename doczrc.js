@@ -1,3 +1,3 @@
 export default {
-  files: 'src/**/*.{md,markdown,mdx}'
+  files: 'src/components/**/*.{md,markdown,mdx}'
 }

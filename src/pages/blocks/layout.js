@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -15,7 +15,6 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -69,7 +68,9 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <span role="img" aria-label="love emoji">
+            ❤️
+          </span>
         </Footer>
       </Wrapper>
     )
