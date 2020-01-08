@@ -2,14 +2,15 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Bio from "../pages/blocks/bio"
 import Layout from "../pages/blocks/layout"
 import SEO from "../pages/blocks/seo"
-import { rhythm, scale } from "../utils/typography"
+import MenuBar from "../pages/blocks/menubar"
+import { Button } from "../components/index"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
+    const menubar = this.props.data.allMdx.edges
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
@@ -19,24 +20,12 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <MenuBar data={menubar} />
         <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
+        <Link to={`/src-components-${post.frontmatter.title.toLowerCase()}-${post.frontmatter.title.toLowerCase()}`}>
+          <Button marginTop="35px" marginBottom="35px">Go to API Doc</Button>
+        </Link>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
 
         <ul
           style={{
@@ -75,6 +64,18 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+      }
+    }
+    allMdx(filter: {fields: {slug: {regex: "/content/"}}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
