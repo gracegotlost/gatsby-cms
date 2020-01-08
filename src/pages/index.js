@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "./blocks/layout"
-import SEO from "./blocks/seo"
-import MenuBar from "./blocks/menubar"
+import Layout from "../blocks/layout"
+import SEO from "../blocks/seo"
+import MenuBar from "../blocks/menubar"
 import { Button } from "../components/index"
 
 class IndexPage extends React.Component {

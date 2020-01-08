@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "./blocks/bio"
-import Layout from "./blocks/layout"
-import SEO from "./blocks/seo"
+import Bio from "../blocks/bio"
+import Layout from "../blocks/layout"
+import SEO from "../blocks/seo"
 import { rhythm } from "../utils/typography"
 import { Button } from "../components/index"
 

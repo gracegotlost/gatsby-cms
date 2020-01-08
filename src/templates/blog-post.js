@@ -2,9 +2,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Layout from "../pages/blocks/layout"
-import SEO from "../pages/blocks/seo"
-import MenuBar from "../pages/blocks/menubar"
+import Layout from "../blocks/layout"
+import SEO from "../blocks/seo"
+import MenuBar from "../blocks/menubar"
 import { Button } from "../components/index"
 
 class BlogPostTemplate extends React.Component {
