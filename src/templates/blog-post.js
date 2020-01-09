@@ -4,8 +4,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../blocks/layout"
 import SEO from "../blocks/seo"
-import MenuBar from "../blocks/menubar"
-import { Button } from "../components/index"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,16 +13,12 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout data={menubar} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <MenuBar data={menubar} />
         <h1>{post.frontmatter.title}</h1>
-        <Link to={`/src-components-${post.frontmatter.title.toLowerCase()}-${post.frontmatter.title.toLowerCase()}`}>
-          <Button marginTop="35px" marginBottom="35px">Go to API Doc</Button>
-        </Link>
         <MDXRenderer>{post.body}</MDXRenderer>
 
         <ul

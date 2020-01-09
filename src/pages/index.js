@@ -3,22 +3,20 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../blocks/layout"
 import SEO from "../blocks/seo"
-import MenuBar from "../blocks/menubar"
 import { Button } from "../components/index"
 
 class IndexPage extends React.Component {
   render() {
-    const { location, data } = this.props
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const menubar = data.allMdx.edges
 
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout data={menubar} title={siteTitle}>
         <SEO
           title="Home"
           keywords={[`design system`]}
         />
-        <MenuBar data={menubar} />
         <img style={{ margin: 0 }} src="./Foundation.png" alt="Cover" />
         <p>
           A design system removes ambiguity and drives consistency by helping designers 
@@ -29,9 +27,6 @@ class IndexPage extends React.Component {
         </p>
         <Link to="/">
           <Button marginTop="35px">Download Sketch Assets</Button>
-        </Link>
-        <Link to="/docs/">
-          <Button marginTop="35px">Go to API Doc</Button>
         </Link>
       </Layout>
     )

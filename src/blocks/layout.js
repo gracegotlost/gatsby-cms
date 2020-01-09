@@ -3,68 +3,35 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
+import MenuBar from './menubar';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
-    let header
+    const { title, data, children } = this.props
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
-      header = (
-        <h1
-          style={{
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
     return (
       <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <header>{header}</header>
-          <main>{children}</main>
-        </div>
+        <Header>
+          <h3
+            style={{
+              marginBottom: rhythm(1.5),
+              marginTop: 0,
+            }}
+          >
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h3>
+        </Header>
+        <MenuBar data={data} />
+        <Main>{children}</Main>
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -79,6 +46,21 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+`
+const Header = styled.header`
+  width: 100%;  
+  height: 80px;
+  padding: 24px 32px;
+  background: #F5F6F7;
+  border-bottom: 1px solid #CED4DE;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+`
+const Main = styled.main`
+  margin: 0 auto;
+  max-width: ${rhythm(24)};
+  padding: ${rhythm(4)} ${rhythm(1.5)} ${rhythm(3 / 4)};
 `
 
 const Footer = styled.footer`

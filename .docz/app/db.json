@@ -165,6 +165,72 @@
           }
         }
       ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Header/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "actualName": "Header"
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Sidebar/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Sidebar",
+          "methods": [],
+          "actualName": "Sidebar"
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Layout/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout"
+        }
+      ]
+    },
+    {
+      "key": "src/blocks/layout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout"
+        }
+      ]
+    },
+    {
+      "key": "src/blocks/menubar.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MenuBar",
+          "methods": [],
+          "actualName": "MenuBar"
+        }
+      ]
+    },
+    {
+      "key": "src/templates/blog-post.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "BlogPostTemplate",
+          "methods": [],
+          "actualName": "BlogPostTemplate"
+        }
+      ]
     }
   ]
 }
