@@ -83,6 +83,88 @@
           "actualName": "IndexPage"
         }
       ]
+    },
+    {
+      "key": "src/components/button/button.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "actualName": "Button",
+          "props": {
+            "background": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The background color of this component",
+              "defaultValue": {
+                "value": "'black'",
+                "computed": false
+              }
+            },
+            "color": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The text color of this component",
+              "defaultValue": {
+                "value": "'rgb(255, 255, 255)'",
+                "computed": false
+              }
+            },
+            "fontSize": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The font size of this component",
+              "defaultValue": {
+                "value": "'15px'",
+                "computed": false
+              }
+            },
+            "fontWeight": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The font weight of this component",
+              "defaultValue": {
+                "value": "'600'",
+                "computed": false
+              }
+            },
+            "radius": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The border radius of this component",
+              "defaultValue": {
+                "value": "'6px'",
+                "computed": false
+              }
+            },
+            "marginTop": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The margin top of this component"
+            },
+            "marginBottom": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The margin bottom of this component"
+            }
+          }
+        }
+      ]
     }
   ]
 }
