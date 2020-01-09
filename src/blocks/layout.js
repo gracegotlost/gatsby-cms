@@ -30,7 +30,7 @@ class Layout extends React.Component {
             </Link>
           </h3>
         </Header>
-        <MenuBar data={data} />
+        {data && <MenuBar data={data} /> }
         <Main>{children}</Main>
         <Footer>
           © {new Date().getFullYear()}, Built with

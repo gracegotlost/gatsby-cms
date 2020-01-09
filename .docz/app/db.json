@@ -200,17 +200,6 @@
       ]
     },
     {
-      "key": "src/blocks/layout.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Layout",
-          "methods": [],
-          "actualName": "Layout"
-        }
-      ]
-    },
-    {
       "key": "src/blocks/menubar.js",
       "value": [
         {
@@ -229,6 +218,28 @@
           "displayName": "BlogPostTemplate",
           "methods": [],
           "actualName": "BlogPostTemplate"
+        }
+      ]
+    },
+    {
+      "key": "src/pages/404.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NotFoundPage",
+          "methods": [],
+          "actualName": "NotFoundPage"
+        }
+      ]
+    },
+    {
+      "key": "src/blocks/layout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout"
         }
       ]
     }
